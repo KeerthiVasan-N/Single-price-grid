@@ -1,0 +1,96 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Karla',sans-serif;
+    display: grid;
+    justify-content: center;
+    color: white;
+    min-height: calc(100vh-0.1px);
+    padding-block: 2rem;
+    background-color: rgb(240,241,241);
+
+}
+strong{
+    font-weight: 700;
+    font-size: 3rem;
+}
+p{
+    font-size: 1rem;
+}
+h2{
+    font-size: 1.2rem;
+}
+.cost{
+    opacity: 0.4;
+    position: relative;
+    bottom: 1rem;
+    margin-left: 0.4rem;
+}
+.item{
+    width: 375px;
+    text-align: left;
+    padding: 1rem;
+}
+.one{
+    background-color: rgb(254,254,255);
+    padding-right: 2rem;
+    line-height: 2rem;
+    border-radius: 8px 8px 0 0 ;
+
+}
+.two{
+    background-color: rgb(42, 178, 175);
+
+}
+.three{
+    background-color:rgb(72,191,189) ;
+    padding-right: 8rem;
+    line-height: 1.5rem;
+    border-radius: 0 0 8px 8px;
+
+}
+button{
+    width: 100%;
+    padding: 1.4rem ;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    background-color: hsl(71, 73%, 54%);
+}
+a{
+    text-decoration: none;
+    color: white;
+     font-size: 1rem;
+}
+h1{
+    color: rgb(89,168,178);
+}
+.one h2{
+    color: rgb(207,225,118);
+}
+.one p{
+    color: hsl(217, 11%, 68%);
+}
+
+@media screen and (min-width:700px) {
+    body{
+        grid-template-columns: 375px 375px;
+    }
+    .one{
+        grid-column: 1/span 2;
+        width: 100%;
+    }
+    .three{
+        border-radius: 0 0 8px 0;
+    }
+    .two{
+        border-radius: 0 0 0 8px;
+    }
+}
+
+
+
+
